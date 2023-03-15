@@ -7,28 +7,40 @@
 // 22 3 9 -> 22
 Console.WriteLine("«Нахождение большего числа»");
 Console.Write("Введите первое целое число: ");
-int a = int.Parse(Console.ReadLine()!);
+int firstNumber = int.Parse(Console.ReadLine()!);
 Console.Write("Введите второе целое число: ");
-int b = int.Parse(Console.ReadLine()!);
+int secondNumber = int.Parse(Console.ReadLine()!);
 Console.Write("Введите третье целое число: ");
-int c = int.Parse(Console.ReadLine()!);
-if (a > b)
+int thirdNumber = int.Parse(Console.ReadLine()!);
+//if (firstNumber > secondNumber)
+//{
+//    if (firstNumber > thirdNumber)
+//    {
+//        Console.WriteLine($"Максимальное число:={firstNumber}");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"Максимальное число:={thirdNumber}"); 
+//    }
+//}
+//else if (secondNumber > thirdNumber)
+//{
+//    Console.WriteLine($"Максимальное число:={secondNumber}");
+//}
+//else
+//{
+//    Console.WriteLine($"Максимальное число:={thirdNumber}");  
+//}
+
+// Вариант покороче:
+int maxNumber = firstNumber;
+if (secondNumber > maxNumber)
 {
-    if (a > c)
-    {
-        Console.WriteLine($"max={a}");
-    }
-    else
-    {
-        Console.WriteLine($"max={c}"); 
-    }
+    maxNumber = secondNumber;
 }
-else if (b > c)
+if (thirdNumber > maxNumber)
 {
-    Console.WriteLine($"max={b}");
+    maxNumber = thirdNumber;
 }
-else
-{
-    Console.WriteLine($"max={c}");  
-}
+Console.WriteLine($"Максимальное число:= {maxNumber}");
 Console.WriteLine("Хорошая работа!");
