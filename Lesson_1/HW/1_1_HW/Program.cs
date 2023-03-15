@@ -7,15 +7,19 @@
 // a = -9 b = -3 -> max = -3
 Console.WriteLine("«Нахождение большего числа»");
 Console.Write("Введите первое целое число: ");
-int a = int.Parse(Console.ReadLine()!);
+int firstNumber = int.Parse(Console.ReadLine()!);
 Console.Write("Введите второе целое число: ");
-int b = int.Parse(Console.ReadLine()!);
-if (a > b)
+int secondNumber = int.Parse(Console.ReadLine()!);
+if (firstNumber > secondNumber)
 {
-    Console.Write($"max={a}"); // Console.WriteLine(a);
+    Console.WriteLine($"{firstNumber} больше, чем {secondNumber}");
+}
+else if (firstNumber < secondNumber)
+{
+    Console.WriteLine($"{secondNumber} больше, чем {firstNumber}");
 }
 else
 {
-    Console.WriteLine($"max={b}");    // Console.WriteLine(b); 
+    Console.WriteLine($"{firstNumber} и {secondNumber} равны");    
 }
 Console.WriteLine("Отлично сделано!");
