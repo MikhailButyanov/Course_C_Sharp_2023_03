@@ -6,6 +6,7 @@ int b = -a;
 while (b <= a)
 {
     Console.Write($"{b} ");
-    b ++; //b = b + 1; 
+    //b ++; //b = b + 1; 
+    b +=1; 
 }
 Console.WriteLine("Отлично сделано!");
