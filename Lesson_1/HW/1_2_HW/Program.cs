@@ -5,7 +5,7 @@
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
-Console.WriteLine("Нахождение большего числа");
+Console.WriteLine("«Нахождение большего числа»");
 Console.Write("Введите первое целое число: ");
 int a = int.Parse(Console.ReadLine()!);
 Console.Write("Введите второе целое число: ");
