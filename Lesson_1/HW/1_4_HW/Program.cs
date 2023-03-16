@@ -11,11 +11,8 @@ Console.WriteLine("Чётные числа от 1 до: {0}", a);
 int i = 2;
 while (i <= a)
 {
-    if (i % 2 == 0)
-    {
-        Console.Write(i + " ");
-    }
-    i++; 
+    Console.Write(i + " ");
+    i += 2; 
 }
 
 //Вариант использующий оператор цикла for

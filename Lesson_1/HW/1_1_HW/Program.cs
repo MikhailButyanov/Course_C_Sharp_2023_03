@@ -7,7 +7,7 @@
 // a = -9 b = -3 -> max = -3
 Console.WriteLine("«Нахождение большего числа»");
 Console.Write("Введите первое целое число: ");
-int firstNumber = int.Parse(Console.ReadLine()!);
+int firstNumber = int.Parse(Console.ReadLine()!);                                                                                                                                                                       
 Console.Write("Введите второе целое число: ");
 int secondNumber = int.Parse(Console.ReadLine()!);
 if (firstNumber > secondNumber)
