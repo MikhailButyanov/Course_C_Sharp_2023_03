@@ -7,7 +7,7 @@
 // «% 10» получение последней цифры, остаток от деления, кратно
 // shift alt A - комментировать выделенный блок
 
-void CheckNum(int num1, int num2)
+void Div(int num1, int num2)
 {
     if (num1 % num2 == 0)
         //Console.WriteLine(num2 + " кратно " + num1);
@@ -20,6 +20,6 @@ void CheckNum(int num1, int num2)
 Console.WriteLine("Введите два числа:");
 int num1 = int.Parse(Console.ReadLine());
 int num2 = int.Parse(Console.ReadLine());
-CheckNum(num1, num2);
+Did(num1, num2);
 
 
