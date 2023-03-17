@@ -5,7 +5,7 @@
 
 void Div(int num)
 {
-    if (num % 7 == 0 && num % 23 == 0) //полная проверка
+    if (num % 7 == 0 && num % 23 == 0) //полная проверка, && означает «и то, и другое»
         Console.WriteLine("Число кратно 7 и 23");
     else
         Console.WriteLine("Число не кратно 7 и 23");
