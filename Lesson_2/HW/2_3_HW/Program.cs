@@ -1,2 +1,26 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/* GB Язык C#. Задача 3: 
+Напишите программу, которая выводит третью цифру заданного числа 
+или сообщает, что третьей цифры нет.
+645 -> 5
+78 -> третьей цифры нет
+32679 -> 6  */
+// "shift alt A" - комментировать выделенный блок
+
+void Main(int number)
+{
+    // получаем третью цифру числа
+    int thirdDigit = (number / 100) % 10;
+//делим на 100, чтобы отбросить две младшие цифры, 
+//затем находим остаток от деления на 10, чтобы получить третью цифру.         
+
+    if (thirdDigit != 0) { //Оператор НЕравенства: !=
+        Console.WriteLine("Третья цифра числа равна " + thirdDigit);
+
+    } else {
+            Console.WriteLine("Третьей цифры в числе нет");
+    }  
+}
+
+Console.Write("Введите число: ");
+int num = int.Parse(Console.ReadLine()!);
+Main(num);
