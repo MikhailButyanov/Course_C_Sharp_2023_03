@@ -1,15 +1,18 @@
-﻿// Задача 2
+﻿// Язык C#. Задача 2: 
 // вывод случайного числа из [10, 99], выводим наибольшую цифру этого числа
-int TakeNum(int num)
+// "/ 10" убираем последнюю цифру, целочисленное деление, 
+// «% 10» получение последней цифры, остаток от деления
+// shift alt A - комментировать выделенный блок
+
+int MaxNum(int number)
 { //тело функции
-    Console.WriteLine(num);
-    return num % 10;
+    Console.WriteLine(number);
+    int firstDigit = number / 10; // "/ 10" убираем последнюю цифру
+    int secondDigit = number % 10; // "% 10" получение последней цифры
+    if(firstDigit > secondDigit) return firstDigit; //return заканчивает функцию
+    return secondDigit;
 } //тело функции
 
-
-int result = TakeNum(new Random().Next(100, 1000));
-// int num = new Random().Next(100, 1000); //выдаёт от 100 до 999
-
-Console.WriteLine(result);
-//Console.WriteLine(num % 10);
-// shift alt A - комментировать выделенный блок
+int number = new Random().Next(10, 100);
+Console.WriteLine($"Сгенерированное число: {number}");
+Console.WriteLine($"Наибольшая цифра: {MaxNum(number)}");
